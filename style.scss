@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+    
+body {
+    background: rgb(174, 195, 203);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.mainTitle {
+    font-size: 3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 50rem;
+    height: 15rem;
+    background: white;
+    text-align: center;
+
+    &__devDetails {
+        position: absolute;
+    }
+
+}

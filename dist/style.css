@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background: #aec3cb;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 3rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 50rem;
+  height: 15rem;
+  background: white;
+  text-align: center;
+}
+.card__devDetails {
+  position: absolute;
+}
