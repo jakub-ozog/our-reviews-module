@@ -3,10 +3,6 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   background: #d8eaef;
 }
@@ -73,10 +69,10 @@ body {
   padding: 0.25rem 0.75rem;
 }
 
-.dNone {
+.hidden {
   display: none;
 }
 
-.dFlex {
-  display: flex;
+.visible {
+  display: block;
 }
