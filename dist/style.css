@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 html {
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-  background: #aec3cb;
+  background: #d8eaef;
 }
 
 .container {
@@ -20,19 +21,62 @@ body {
 }
 
 .mainTitle {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .card {
-  position: relative;
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  width: 50rem;
-  height: 15rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50rem;
   background: white;
   text-align: center;
 }
 .card__devDetails {
-  position: absolute;
+  padding: 1.25rem 1.5rem;
+}
+.card__devTitle {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+.card__devSubtitle {
+  margin-top: 0;
+  color: #0f95ad;
+  font-size: 0.75rem;
+}
+.card__devThumb img {
+  height: 80px;
+}
+.card__arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.card__arrows img {
+  cursor: pointer;
+  width: 30px;
+}
+.card__btnWrapper {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card__btnWrapper button {
+  max-width: 20%;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #1c9ab0;
+  background: #b3f4ff;
+  border-radius: 10px;
+  padding: 0.25rem 0.75rem;
+}
+
+.dNone {
+  display: none;
+}
+
+.dFlex {
+  display: flex;
 }
