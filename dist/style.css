@@ -4,7 +4,11 @@
 }
 
 body {
-  background: #d8eaef;
+  background: #e6f5fb;
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -18,6 +22,26 @@ body {
 
 .mainTitle {
   font-size: 4rem;
+  position: relative;
+  color: white;
+}
+.mainTitle::after {
+  content: "";
+  display: block;
+  border: 2px solid #ffffff8c;
+  margin: 1rem auto;
+  width: 10rem;
+}
+
+.wrapper {
+  background: white;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 4px -1px 16px 2px #0000001f;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .card {
@@ -26,11 +50,11 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 50rem;
-  background: white;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 .card__devDetails {
-  padding: 1.25rem 1.5rem;
+  transition: transform 0.3s ease-in-out;
 }
 .card__devTitle {
   font-weight: 400;
@@ -39,34 +63,46 @@ body {
 }
 .card__devSubtitle {
   margin-top: 0;
-  color: #0f95ad;
+  color: #3b90da;
   font-size: 0.75rem;
 }
 .card__devThumb img {
-  height: 80px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card__devDesc {
+  line-height: 22px;
 }
 .card__arrows {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 .card__arrows img {
   cursor: pointer;
-  width: 30px;
+  width: 25px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  object-fit: cover;
+  place-items: center;
 }
 .card__btnWrapper {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 .card__btnWrapper button {
-  max-width: 20%;
+  width: 8rem;
+  font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
   outline: none;
   border: 2px solid #1c9ab0;
   background: #b3f4ff;
   border-radius: 10px;
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .hidden {

@@ -1,78 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our reviews!</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet" />
+    <script defer src="app/script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our reviews!</title>
-  <link rel="stylesheet" href="dist/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-  <script defer src="app/script.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <main>
-      <section>
-        <h1 class="mainTitle">
-          Our Reviews
-        </h1>
-
-        <div class="card">
-          <div data-dev1 class="card__devDetails">
-
-            <div class="card__devThumb">
-              <img src="assets/images/account_thumb.svg" alt="icon-user">
+  <body>
+    <div class="container">
+      <main>
+        <section>
+          <h1 class="mainTitle">Our Reviews</h1>
+          <div class="wrapper">
+            <div class="card">
+              <div class="card__devDetails">
+                <div class="card__devThumb">
+                  <img src="" alt="icon-user" />
+                </div>
+                <h2 class="card__devTitle"></h2>
+                <h3 class="card__devSubtitle"></h3>
+                <p class="card__devDesc"></p>
+              </div>
             </div>
-            <h2 class="card__devTitle">Susan Smith</h2>
-            <h3 class="card__devSubtitle">WEB DEVELOPER</h3>
-            <p class="card__devDesc">I'm meggings twee health goth +1. Bicycle rights tumeric chartreuse before they
-              sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar
-              toast eveyrdau carry</p>
-          </div>
-
-          <div data-dev2 class="card__devDetails ">
-
-            <div class="card__devThumb">
-              <img src="assets/images/account_thumb.svg" alt="icon-user">
+            <div class="card__arrows">
+              <img
+                class="card__preview"
+                src="assets/images/arrov_left.svg"
+                alt="arrow-left" />
+              <img
+                class="card__next"
+                src="assets/images/arrow_right.svg"
+                alt="arrow-right" />
             </div>
-            <h2 class="card__devTitle">James Bond</h2>
-            <h3 class="card__devSubtitle">WEB DEVELOPER</h3>
-            <p class="card__devDesc">I'm meggings twee health goth +1. Bicycle rights tumeric chartreuse before they
-              sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar
-              toast eveyrdau carry</p>
-          </div>
 
-
-          <div data-dev3 class="card__devDetails ">
-
-            <div class="card__devThumb">
-              <img src="assets/images/account_thumb.svg" alt="icon-user">
+            <div class="card__btnWrapper">
+              <button class="card__randomBtn" role="button" type="submit">Suprise me</button>
             </div>
-            <h2 class="card__devTitle">Ferdynand Kiepski</h2>
-            <h3 class="card__devSubtitle">WEB DEVELOPER</h3>
-            <p class="card__devDesc">I'm meggings twee health goth +1. Bicycle rights tumeric chartreuse before they
-              sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar
-              toast eveyrdau carry</p>
           </div>
-
-
-          <div class="card__arrows">
-            <img class="card__preview" src="assets/images/arrov_left.svg" alt="arrow-left">
-            <img class="card__next"  src="assets/images/arrow_right.svg" alt="arrow-right">
-          </div>
-
-          <div class="card__btnWrapper">
-            <button role="button" type="submit">
-              Suprise me
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
